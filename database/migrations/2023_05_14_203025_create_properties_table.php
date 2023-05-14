@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->unsignedInteger('price');
             $table->unsignedSmallInteger('rooms');
             $table->unsignedSmallInteger('batchrooms');
